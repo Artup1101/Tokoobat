@@ -28,7 +28,10 @@
         <a class="nav-link" href="index2.php">Obat</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link" href="index3.php">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.php">Login</a>
       </li>
     </ul>
   </div>
@@ -38,9 +41,9 @@
    <center>
    <img src="wkwkw.jpg" width="400" class="rounded-circle">
   <h1 class="display-4">Toko Obat A R T U P</h1>
-  <p class="lead">Hanya Jual Obat Obat Berbahaya . Toko Anti Mainstream</p>
+  <p class="lead">Seperti Apotik Pada Umumnya, Cuma Ini Jual Online Di web Gituh</p>
   <hr class="my-4">
-  <p>Cuma butuh Bayar seadanya tidak perlu mahal mahal brooooooooooo</p>
+  <p>Cuma butuh Bayar seadanya tidak perlu mahal mahal Karena Yang Mahal Itu Ada Sendiri Vroh:v</p>
    </center>
 </div>
 <footer class="footer bg-dark text-light">

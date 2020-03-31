@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obat</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style type="text/css">
     table{
@@ -53,7 +53,8 @@
     <tr>
         <th>Nomor</th>
         <th>Obat</th>
-        <th>Fungsi</th>    
+        <th>Fungsi</th>
+        <th colspan = '3'>Aksi</th>    
     </tr>
     <?php
     while( $data = mysqli_fetch_assoc($sql) ){
@@ -62,9 +63,13 @@
         echo "<td>".$data['Nomor']."</td>";
         echo "<td>".$data['Obat']."</td>";
         echo "<td>".$data['Tujuan']."</td>";
+        echo "<td> <a href = 'proses-tambah.php'>Tambah</a></td>";
+        echo "<td> <a href = 'form-update.php?Nomor=".$data['Nomor']."'>Edit</a></td>";
+        echo "<td> <a href = 'Hapus.php?Nomor=".$data['Nomor']."'
+        onclick = 'return confirm (\"APAKAH ANDA YAKIN INGIN MENGHAPUS DATA ?\")'>Hapus</a></td>";
         echo "</tr>";
     }
     ?>
-    </table> 
+    </table>
 </body>
 </html>

@@ -29,10 +29,27 @@
       <li class="nav-item">
         <a class="nav-link" href="index3.php">Contact Us</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
     </ul>
   </div>
 </nav>
-
+<div class="jumbotron text-center">
+  <h1 class="display-4">Contact US</h1><br><br><br><br>
+  <p class="lead">Facebook : <a href="https://www.facebook.com/profile.php?id=100011144283865">Msayp Putra<a> Instagram : <a href="https://www.instagram.com/msayp_putra3105/">@Msayp_Putra3105<a> Whatsapp : 081555356636 </p>
+  <hr class="my-4">
+  <p>Alamat : Jalan Danau Kerinci G6F No.22 Sawojajar Malang Jawa Timur Indonesia</p>
+  <br><br><br><br><br>
+  <p>Web Yang Membantu Saya</p>
+  <a class="btn btn-primary btn-lg" href="https://www.k24klik.com/" role="button">Learn more</a>
+  <br><br>
+</div>
+<footer class="footer bg-dark text-light">
+<div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <a href="https://www.facebook.com/profile.php?id=100011144283865">Toko Obat Artup</a>
+</div>
+</footer>
     
 </body>
 </html>
