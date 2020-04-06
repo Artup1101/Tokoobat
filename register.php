@@ -33,11 +33,19 @@
       <input type="text" name="" class="form-control" placeholder="Masukkan Username Anda">
     </div>
     <div class="form-group">
+      <label>E-mail</label>
+      <input type="text" name="" class="form-control" placeholder="Masukkan E-mail Anda">
+    </div>
+    <div class="form-group">
       <label>Password</label>
       <input type="password" name="" class="form-control" placeholder="Masukkan Password Anda">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <button type="submit" class="btn btn-danger">Register</button>
+    </form>
+    <form action="prosesdaftar.php">
+    <button type="submit" class="btn btn-primary">Daftar</button>
+    </from>
+    <from action="login.php">
+    <button type="submit" class="btn btn-danger">Login</button>
     </form>
     </div>   
 
