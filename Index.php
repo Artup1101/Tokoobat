@@ -6,7 +6,11 @@
     <title>Toko Obat</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <style type="text/css">
+    span{
+        text-align:right;
+    }
+    </style>
 </head>
 <body>
 
@@ -31,10 +35,15 @@
         <a class="nav-link" href="index3.php">Contact Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="login.php">Login</a>
+        <a class="nav-link" href="logout.php">Logout</a>
       </li>
     </ul>
-  </div>
+    </div>
+    <div class="ak">
+  <span class="navbar-text">
+       User Toko
+    </span>
+    </div>
 </nav>
 
 <div class="jumbotron ">

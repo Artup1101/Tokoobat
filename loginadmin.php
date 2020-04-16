@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewpo rt" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login Admin</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style type="text/css">
     .container{
@@ -15,9 +15,6 @@
     }
     button {
       width: 100%;
-    }
-    .wkwkw{
-      padding-left:50px;
     }
   </style>
 
@@ -30,7 +27,7 @@
     <div class="container">
     <h4 class="text-center">Form Login</h4>
     <hr>
-    <form method="post" action="proseslogin.php">
+    <form method="post" action="prosesloginadmin.php">
     <div class="form-group">
       <label>Username</label>
       <input type="text" name="Username" class="form-control" placeholder="Masukkan Username Anda">
@@ -42,11 +39,9 @@
     <button type="submit" class="btn btn-primary" action="">Submit</button>
     </form>
     <center>
-    Belum Punya Akun
-    <a href='Register.php'>Daftar Disini</a>
+    Kembali
+    <a href='login.php'>Login User</a>
     </center>
    </div>
-   <br><br><br><br><br>
-    <a class="wkwkw"href="loginadmin.php">admin</a>
 </body>
 </html>

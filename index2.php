@@ -34,9 +34,14 @@
         <a class="nav-link" href="index3.php">Contact Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="logout.php">Logout</a>
       </li>
     </ul>
+  </div>
+  <div class="ak">
+  <span class="navbar-text">
+       User Toko
+    </span>
   </div>
   
 </nav> 
@@ -52,6 +57,7 @@
     <table border='1'></center>
     <tr>
         <th>Nomor</th>
+        <th>ID</th>
         <th>Obat</th>
         <th>Fungsi</th>    
     </tr>
@@ -59,9 +65,10 @@
     while( $data = mysqli_fetch_assoc($sql) ){
 
         echo "<tr>";
-        echo "<td>".$data['Nomor']."</td>";
-        echo "<td>".$data['Obat']."</td>";
-        echo "<td>".$data['Tujuan']."</td>";
+        echo "<td>".$data['nomor']."</td>";
+        echo "<td>".$data['id_barang']."</td>";
+        echo "<td>".$data['obat']."</td>";
+        echo "<td>".$data['tujuan']."</td>";
         echo "</tr>";
     }
     ?>

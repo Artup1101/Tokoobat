@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style type="text/css">
-    table{
-      width: 80%;
-    }
     span{
         text-align:right;
     }
@@ -49,39 +46,22 @@
        Admin Artup
     </span>
   </div>
-</nav> 
-<center><h1>DATA OBAT</h1>
-<?php 
-    include "koneksi.php";
-
-    $query = "SELECT * FROM obat";
-
-    $sql = mysqli_query($connect, $query);
-    $num = mysqli_num_rows($sql);
-    ?>
-    <a href = 'tambah.php'>Menambahkan Akun Disini</a>
-    <table border='1'></center>
-    <tr>
-        <th>Nomor</th>
-        <th>ID</th>
-        <th>Obat</th>
-        <th>Fungsi</th>
-        <th colspan = '2'>Aksi</th>    
-    </tr>
-    <?php
-    while( $data = mysqli_fetch_assoc($sql) ){
-
-        echo "<tr>";
-        echo "<td>".$data['nomor']."</td>";
-        echo "<td>".$data['id_barang']."</td>";
-        echo "<td>".$data['obat']."</td>";
-        echo "<td>".$data['tujuan']."</td>";
-        echo "<td> <a href = 'form-update.php?id_barang=".$data['id_barang']."'>Edit</a></td>";
-        echo "<td> <a href = 'Hapus.php?id_barang=".$data['id_barang']."'
-        onclick = 'return confirm (\"APAKAH ANDA YAKIN INGIN MENGHAPUS DATA ?\")'>Hapus</a></td>";
-        echo "</tr>";
-    }
-    ?>
-    </table>
+</nav>
+<div class="jumbotron text-center">
+  <h1 class="display-4">Contact US</h1><br><br><br><br>
+  <p class="lead">Facebook : <a href="https://www.facebook.com/profile.php?id=100011144283865">Msayp Putra<a> Instagram : <a href="https://www.instagram.com/msayp_putra3105/">@Msayp_Putra3105<a> Whatsapp : 081555356636 </p>
+  <hr class="my-4">
+  <p>Alamat : Jalan Danau Kerinci G6F No.22 Sawojajar Malang Jawa Timur Indonesia</p>
+  <br><br><br><br><br>
+  <p>Web Yang Membantu Saya</p>
+  <a class="btn btn-primary btn-lg" href="https://www.k24klik.com/" role="button">Learn more</a>
+  <br><br>
+</div>
+<footer class="footer bg-dark text-light">
+<div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <a href="https://www.facebook.com/profile.php?id=100011144283865">Toko Obat Artup</a>
+</div>
+</footer>
+    
 </body>
 </html>

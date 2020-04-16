@@ -9,6 +9,7 @@
     table{
       width: 80%;
     }
+    
     span{
         text-align:right;
     }
@@ -49,35 +50,30 @@
        Admin Artup
     </span>
   </div>
+  
 </nav> 
-<center><h1>DATA OBAT</h1>
+<center><h1>DATA USER</h1>
 <?php 
     include "koneksi.php";
 
-    $query = "SELECT * FROM obat";
+    $query = "SELECT * FROM logreg";
 
     $sql = mysqli_query($connect, $query);
     $num = mysqli_num_rows($sql);
     ?>
-    <a href = 'tambah.php'>Menambahkan Akun Disini</a>
     <table border='1'></center>
     <tr>
-        <th>Nomor</th>
-        <th>ID</th>
-        <th>Obat</th>
-        <th>Fungsi</th>
-        <th colspan = '2'>Aksi</th>    
+        <th>Username</th>
+        <th>Password</th>
+        <th colspan = '1'>Aksi</th>    
     </tr>
     <?php
     while( $data = mysqli_fetch_assoc($sql) ){
 
         echo "<tr>";
-        echo "<td>".$data['nomor']."</td>";
-        echo "<td>".$data['id_barang']."</td>";
-        echo "<td>".$data['obat']."</td>";
-        echo "<td>".$data['tujuan']."</td>";
-        echo "<td> <a href = 'form-update.php?id_barang=".$data['id_barang']."'>Edit</a></td>";
-        echo "<td> <a href = 'Hapus.php?id_barang=".$data['id_barang']."'
+        echo "<td>".$data['Username']."</td>";
+        echo "<td>".$data['Password']."</td>";
+        echo "<td> <a href = 'Hapus.php?Username=".$data['Username']."'
         onclick = 'return confirm (\"APAKAH ANDA YAKIN INGIN MENGHAPUS DATA ?\")'>Hapus</a></td>";
         echo "</tr>";
     }

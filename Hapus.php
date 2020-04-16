@@ -1,9 +1,9 @@
 <?php 
 include "koneksi.php";
 
-$id_user = $_GET['Id_user'];
+$id = $_GET['id_barang'];
 
-$query = "DELETE FROM data_user WHERE Id_user = $id_user";
+$query = "DELETE FROM obat WHERE id_barang = $id";
 
 $result = mysqli_query($connect,$query);
 
@@ -16,6 +16,6 @@ if($num>0){
 else{
     echo "Gagal Hapus Data<br>";
 }
-echo "<a href='read.php'>Lihat Data Gayn</a>"
+echo "<a href='index2admin.php'>Lihat Data Gayn</a>"
 
 ?>

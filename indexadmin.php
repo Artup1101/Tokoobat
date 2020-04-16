@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toko Obat</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style type="text/css">
-    table{
-      width: 80%;
-    }
     span{
         text-align:right;
     }
@@ -49,39 +47,21 @@
        Admin Artup
     </span>
   </div>
-</nav> 
-<center><h1>DATA OBAT</h1>
-<?php 
-    include "koneksi.php";
+</nav>
 
-    $query = "SELECT * FROM obat";
-
-    $sql = mysqli_query($connect, $query);
-    $num = mysqli_num_rows($sql);
-    ?>
-    <a href = 'tambah.php'>Menambahkan Akun Disini</a>
-    <table border='1'></center>
-    <tr>
-        <th>Nomor</th>
-        <th>ID</th>
-        <th>Obat</th>
-        <th>Fungsi</th>
-        <th colspan = '2'>Aksi</th>    
-    </tr>
-    <?php
-    while( $data = mysqli_fetch_assoc($sql) ){
-
-        echo "<tr>";
-        echo "<td>".$data['nomor']."</td>";
-        echo "<td>".$data['id_barang']."</td>";
-        echo "<td>".$data['obat']."</td>";
-        echo "<td>".$data['tujuan']."</td>";
-        echo "<td> <a href = 'form-update.php?id_barang=".$data['id_barang']."'>Edit</a></td>";
-        echo "<td> <a href = 'Hapus.php?id_barang=".$data['id_barang']."'
-        onclick = 'return confirm (\"APAKAH ANDA YAKIN INGIN MENGHAPUS DATA ?\")'>Hapus</a></td>";
-        echo "</tr>";
-    }
-    ?>
-    </table>
+<div class="jumbotron ">
+   <center>
+   <img src="wkwkw.jpg" width="400" class="rounded-circle">
+  <h1 class="display-4">Toko Obat A R T U P</h1>
+  <p class="lead">Seperti Apotik Pada Umumnya, Cuma Ini Jual Online Di web Gituh</p>
+  <hr class="my-4">
+  <p>Cuma butuh Bayar seadanya tidak perlu mahal mahal Karena Yang Mahal Itu Ada Sendiri Vroh:v</p>
+   </center>
+</div>
+<footer class="footer bg-dark text-light">
+<div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <a href="https://www.facebook.com/profile.php?id=100011144283865">Toko Obat Artup</a>
+</div>
+</footer>
 </body>
 </html>

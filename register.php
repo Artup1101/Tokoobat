@@ -1,7 +1,7 @@
 
 </html><!DOCTYPE html>
 <html lang="en">
-<head>
+<hea`d>
     <meta charset="UTF-8">
     <meta name="viewpo rt" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
@@ -14,7 +14,7 @@
       padding: 40px;
     }
     button {
-      width: 49%;
+      width: 100%;
     }
   </style>
 
@@ -25,28 +25,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <div class="container">
-    <h4 class="text-center">Form Login</h4>
+    <h4 class="text-center">Form Register</h4>
     <hr>
-    <form>
+    <form method="post" action="prosesdaftar.php">
     <div class="form-group">
       <label>Username</label>
-      <input type="text" name="" class="form-control" placeholder="Masukkan Username Anda">
-    </div>
-    <div class="form-group">
-      <label>E-mail</label>
-      <input type="text" name="" class="form-control" placeholder="Masukkan E-mail Anda">
+      <input type="text" name="Username" class="form-control" placeholder="Masukkan Username Anda">
     </div>
     <div class="form-group">
       <label>Password</label>
-      <input type="password" name="" class="form-control" placeholder="Masukkan Password Anda">
+      <input type="password" name="Password" class="form-control" placeholder="Masukkan Password Anda">
     </div>
-    </form>
-    <form action="prosesdaftar.php">
     <button type="submit" class="btn btn-primary">Daftar</button>
-    </from>
-    <from action="login.php">
-    <button type="submit" class="btn btn-danger">Login</button>
     </form>
+    <center>
+    Sudah Punya Akun
+    <a href='Login.php'>Login Disini</a>
+    </center>
     </div>   
 
 </body>
